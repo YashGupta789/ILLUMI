@@ -1,0 +1,440 @@
+/* contents:  1) Default settings
+              2) Navigation Bar
+              3) Main Page
+              4) About 
+              5) Shop by Category
+              6) Video
+              7) Top Seller
+              8) Connect with us
+              9) Get in Touch
+              10) Icon-Bar
+              11) Footer    */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/*Scroll*/
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #535353;
+    border-radius: 10px;
+    border: 0.2rem solid transparent;
+    background-clip: content-box;
+}
+
+/*--------------------------------------------Default settings over---------------------------------------------*/
+
+header {
+    padding: 0 3rem;
+    background-color: #fdd2f3;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 1rem 0 #ffdede;
+    z-index: 5;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+}
+
+header nav .left-side-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+header nav .left-side-menu a img {
+    width: 7rem;
+    height: 6rem;
+}
+
+header nav .left-side-menu .sub-menu {
+    height: inherit;
+    display: flex;
+    padding-left: 4vh;
+}
+
+header nav .left-side-menu .sub-menu a {
+    margin-right: 3rem;
+}
+
+header nav .left-side-menu .sub-menu a li {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    transform: all 0.2s;
+    color: rgb(143, 0, 0);
+    text-transform: uppercase
+}
+
+header nav .left-side-menu .sub-menu a li:hover {
+    color: orangered;
+}
+
+header .right-side-menu {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+/*-----------------------------------Navigation bar over----------------------------------------------*/
+
+.main-page {
+    padding-top: 5.5rem;
+    width: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13rem;
+}
+
+.main-page img {
+    height: 85vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 13px rgb(255, 192, 83);
+}
+
+/*-----------------------------------Main Page over----------------------------------------------*/
+
+.about img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.8);
+}
+
+/*-----------------------------------About Page over----------------------------------------------*/
+
+.shop-by-category {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    height: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.shop-by-category-heading {
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    background-color: rgb(198, 169, 255);
+    margin-bottom: 3rem;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.shop-by-category-products {
+    margin-top: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shop-by-category-items {
+    margin: 6vh;
+    margin-bottom: 7vh;
+}
+
+.shop-by-category-items img {
+    border-radius: 5px 5px 0 0;
+    width: 18rem;
+    height: 17rem;
+    display: block;
+    border: 3px solid rgb(0, 232, 58);
+}
+
+.shop-by-category-items figcaption {
+    background-color: #f5dcc6;
+    border: 3px solid rgb(0, 232, 58);
+    border-radius: 0 0 5px 5px;
+    border-top: 0px;
+    display: block;
+}
+
+.shop-by-category-items figcaption p {
+    margin-top: 0px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    transition: all 0.6s linear;
+    transform: translateX(0);
+}
+
+.shop-by-category-items:hover figcaption p {
+    display: flex-end;
+    cursor: pointer;
+    transform: translateX(10rem);
+}
+
+.shop-by-category-items:hover {
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem 0 rgba(0, 232, 58, 0.717);
+}
+
+/*-----------------------------------Shop by category over----------------------------------------------*/
+
+.video {
+    margin-top: 10rem;
+    margin-bottom: 20vh;
+}
+
+.video :hover {
+    cursor: pointer;
+}
+
+/*-----------------------------------Video over----------------------------------------------*/
+
+.top-sellers {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+}
+
+.top-sellers-heading {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: darkolivegreen;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 8vh;
+    text-transform: capitalize;
+}
+
+.top-sellers-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.top-sellers-items {
+    padding: 0.2vh;
+    margin: 1.8vh;
+    cursor: pointer;
+}
+
+.top-sellers-items img {
+    width: 16rem;
+    height: 14.5rem;
+    display: block;
+    border: 2.5px solid rgb(24, 24, 24);
+    border-radius: 5px 5px 0 0;
+}
+
+.top-sellers figcaption {
+    background-color: #f5dcc6;
+    border: 2.5px solid rgb(24, 24, 24);
+    border-top: 0px;
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+.top-sellers figcaption p {
+    margin-top: 0px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    transition: all 0.6s linear;
+    transform: translateX(0);
+}
+
+.top-sellers-items:hover figcaption p {
+    display: flex-end;
+    transform: translateX(5.5rem);
+}
+
+.top-sellers-items:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0 #e0f567;
+    z-index: 0;
+    transform: scale(1.01);
+}
+
+/*-----------------------------------top seller page over----------------------------------------------*/
+
+.connect-with-us {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8rem;
+    margin-right: 3rem;
+    margin-bottom: 8rem;
+    align-items: center;
+}
+
+.connect-with-us-heading h1 {
+    font-size: 3rem;
+    color: rgb(162, 68, 0);
+    text-decoration: underline;
+}
+
+.connect-with-us-center :first-child {
+    padding-top: 60px;
+}
+
+.connect-with-us-right img {
+    padding-top: 40px;
+}
+
+/*-----------------------------------connect with us page over----------------------------------------------*/
+
+.get-in-touch {
+    color: white;
+    padding: 10vh;
+    background-color: #917154;
+    box-shadow: 0 0 1.5rem 0 #917154;
+}
+
+.get-in-touch h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3.5rem;
+}
+
+.get-in-touch-link {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    padding-top: 8vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    justify-content: space-between;
+}
+
+.get-in-touch a {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.get-in-touch li {
+    text-align: center;
+    padding: 12px;
+}
+
+.get-in-touch li:hover {
+    cursor: pointer;
+}
+
+/*-----------------------------------get in touch over----------------------------------------------*/
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.icon-bar a {
+    width: 15.5rem;
+    color: #ffff;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: flex-end;
+    transition: all 0.5s linear;
+    transform: translateX(-12rem);
+}
+
+.icon-bar p {
+    font-size: 1.2rem;
+    color: black;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.icon-bar img {
+    width: 40px;
+    height: 40px;
+    padding-right: 0rem;
+}
+
+.icon-bar a:hover {
+    transform: translateX(0);
+}
+
+.facebook {
+    background-color: silver;
+}
+
+.linkedin {
+    background-color: silver;
+}
+
+.instagram {
+    background-color: silver;
+}
+
+.twitter {
+    background-color: silver;
+}
+
+.github {
+    background-color: silver;
+}
+
+/*-------------------------------------icon-bar over------------------------------------*/
+
+.bottom {
+    width: 100%;
+    background-color: black;
+    height: 8.7vh;
+    color: grey;
+}
+
+.bottom p {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+/*-----------------------------------Webisete Finished----------------------------------------------*/
